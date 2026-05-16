@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="calcular el volumen del recipiente"/>
+        <attribute name="authors" value="RYZEN 3"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-24 06:43:15 p.&#160;m."/>
+        <attribute name="created" value="UllaRU4gMztERVNLVE9QLURRNjZBMVY7MjAyNi0wNC0yNDswNjoxMzozMCBwLsKgbS47MzEyNA=="/>
+        <attribute name="edited" value="UllaRU4gMztERVNLVE9QLURRNjZBMVY7MjAyNi0wNC0yNDswNjo0MzoxNSBwLsKgbS47MTszMjM4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Volumen, Altura, Largo, Ancho, metrocubico, total" type="Real" array="False" size=""/>
+            <assign variable="metrocubico" expression="1000000"/>
+            <output expression="&quot;cual es el valor de la altura&quot;" newline="True"/>
+            <input variable="Altura"/>
+            <output expression="&quot;cual es el valor de el largo&quot;" newline="True"/>
+            <input variable="Largo"/>
+            <output expression="&quot;cual es el valor del ancho&quot;" newline="True"/>
+            <input variable="Ancho"/>
+            <assign variable="Volumen" expression="(Altura*Largo*Ancho)"/>
+            <assign variable="total" expression="volumen * metrocubico"/>
+            <output expression="&quot;el valor total de la cantidad de agua que puede almacenar es de &quot; &amp; total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

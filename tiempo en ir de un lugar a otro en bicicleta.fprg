@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="tiempo en ir de un lugar a otro en bicicleta"/>
+        <attribute name="authors" value="RYZEN 3"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-24 07:10:07 p.&#160;m."/>
+        <attribute name="created" value="UllaRU4gMztERVNLVE9QLURRNjZBMVY7MjAyNi0wNC0yNDswNjo0NToyOCBwLsKgbS47MzEzNg=="/>
+        <attribute name="edited" value="UllaRU4gMztERVNLVE9QLURRNjZBMVY7MjAyNi0wNC0yNDswNzoxMDowNyBwLsKgbS47MTszMjM0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Tiempo, Distancia, Velocidad" type="Real" array="False" size=""/>
+            <output expression="&quot;Cual es la diistancia&quot;" newline="True"/>
+            <input variable="Distancia"/>
+            <output expression="&quot;Cual es la velocidad&quot;" newline="True"/>
+            <input variable="Velocidad"/>
+            <assign variable="Tiempo" expression="Distancia / Velocidad"/>
+            <output expression="&quot; se demorara &quot; &amp; Tiempo &amp; &quot; hora&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

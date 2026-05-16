@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="triangulo"/>
+        <attribute name="authors" value="RYZEN 3"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-05-08 08:57:15 p.&#160;m."/>
+        <attribute name="created" value="UllaRU4gMztERVNLVE9QLURRNjZBMVY7MjAyNi0wNS0wODswNzowOTozNSBwLsKgbS47MzEzOA=="/>
+        <attribute name="edited" value="UllaRU4gMztERVNLVE9QLURRNjZBMVY7MjAyNi0wNS0wODswODo1NzoxNSBwLsKgbS47MTszMjQ4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Largo, Ancho, i, Tama&#241;o" type="Real" array="False" size=""/>
+            <assign variable="Tama&#241;o" expression="random(100)"/>
+            <assign variable="Largo" expression="Tama&#241;o*5"/>
+            <assign variable="Ancho" expression="Tama&#241;o*10"/>
+            <call expression="HacerRectangulo (Largo, Ancho)"/>
+        </body>
+    </function>
+    <function name="HacerRectangulo" type="None" variable="">
+        <parameters>
+            <parameter name="W" type="Real" array="False"/>
+            <parameter name="H" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <for variable="i" start="1" end="2" direction="inc" step="1">
+                <forward expression="H" pen="down"/>
+                <turn expression="90" rotate="right"/>
+                <forward expression="W" pen="down"/>
+                <turn expression="90" rotate="right"/>
+            </for>
+        </body>
+    </function>
+    <function name="HacerUnTriangulo" type="None" variable="">
+        <parameters>
+            <parameter name="L" type="Real" array="False"/>
+            <parameter name="A" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <turn expression="45" rotate="right"/>
+            <forward expression="Ancho*(SQRT(2))/2" pen="down"/>
+            <call expression=""/>
+        </body>
+    </function>
+</flowgorithm>

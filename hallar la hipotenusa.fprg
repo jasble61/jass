@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="hallar la hipotenusa"/>
+        <attribute name="authors" value="RYZEN 3"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-24 06:13:07 p.&#160;m."/>
+        <attribute name="created" value="UllaRU4gMztERVNLVE9QLURRNjZBMVY7MjAyNi0wNC0xOTswOToxMTo0NCBwLsKgbS47MzEzNA=="/>
+        <attribute name="edited" value="UllaRU4gMztERVNLVE9QLURRNjZBMVY7MjAyNi0wNC0yNDswNjoxMzowNyBwLsKgbS47MjszMjM3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Hipotenusa, CatetoOpuesto, CatetoAdyacente" type="Real" array="False" size=""/>
+            <output expression="&quot;cual es el cateto opuesto&quot;" newline="True"/>
+            <input variable="CatetoOpuesto"/>
+            <output expression="&quot;cual es el cateto adyacente&quot;" newline="True"/>
+            <input variable="CatetoAdyacente"/>
+            <assign variable="Hipotenusa" expression="sqrt((CatetoOpuesto*CatetoOpuesto)+(CatetoAdyacente*CatetoAdyacente))"/>
+            <output expression="&quot;la hipotenusa es &quot;&amp; Hipotenusa" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
